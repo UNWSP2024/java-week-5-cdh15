@@ -1,0 +1,59 @@
+import java.util.Scanner;
+public class Main
+{
+    static Scanner userInput = new Scanner(System.in);
+    public static void main(String[] args) throws InterruptedException
+    {
+        int x, y;
+        System.out.print("Enter a number: ");
+        int size = userInput.nextInt();
+        for (x=0; x<=size; x++)
+        {
+            if (x != 0)
+            {
+                System.out.print(x);
+            }
+            else
+                System.out.print("+");
+            if (x <= 9)
+            {
+                System.out.print(" ");
+            }
+            System.out.print(" ");
+            for (y=1; y<=size; y++)
+            {
+                int sum = x + y;
+                System.out.print(sum);
+
+                if (sum <= 9)
+                {
+                    System.out.print(" ");
+                }
+                System.out.print(" ");
+
+            }
+        System.out.println();
+        }
+
+    }
+}
+
+
+Output
+
+Enter a number: 13
++  1  2  3  4  5  6  7  8  9  10 11 12 13 
+1  2  3  4  5  6  7  8  9  10 11 12 13 14 
+2  3  4  5  6  7  8  9  10 11 12 13 14 15 
+3  4  5  6  7  8  9  10 11 12 13 14 15 16 
+4  5  6  7  8  9  10 11 12 13 14 15 16 17 
+5  6  7  8  9  10 11 12 13 14 15 16 17 18 
+6  7  8  9  10 11 12 13 14 15 16 17 18 19 
+7  8  9  10 11 12 13 14 15 16 17 18 19 20 
+8  9  10 11 12 13 14 15 16 17 18 19 20 21 
+9  10 11 12 13 14 15 16 17 18 19 20 21 22 
+10 11 12 13 14 15 16 17 18 19 20 21 22 23 
+11 12 13 14 15 16 17 18 19 20 21 22 23 24 
+12 13 14 15 16 17 18 19 20 21 22 23 24 25 
+13 14 15 16 17 18 19 20 21 22 23 24 25 26 
+  
