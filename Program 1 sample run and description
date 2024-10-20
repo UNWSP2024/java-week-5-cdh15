@@ -1,0 +1,15 @@
+Count is: 1
+Count is: 3
+Count is: 7
+Count is: 15
+Count is: 31
+Count is: 63
+Count is: 127
+Count is: 255
+Count is: 511
+Count is: 1023
+Count is: 2047
+Count is: 4095
+
+Description of code:
+This code runs a for loop as long as the value of I is less than 5000. For each iteration of the loop it first checks if the value of I is lower than 5000, and if it is, it multiplies the current value of I by 2 and adds 1 and then it stores the result as the new value of I . Then the result is printed showing the current value of I and the loop runs again provided t follows the conditions
