@@ -1,0 +1,53 @@
+import java.util.Scanner;
+public class Main
+{
+    static Scanner userInput = new Scanner(System.in);
+    public static void main(String[] args) throws InterruptedException
+    {
+        String rollAgain = "Y";
+        boolean yesRollAgain = true;
+        while (yesRollAgain)
+        {
+            System.out.print("Roll Dice? Y/N: ");
+            rollAgain = userInput.nextLine();
+            if (rollAgain.equals("N"))
+            {
+                yesRollAgain = false;
+                System.out.println("No more dice rolls");
+                break;
+            }
+            int dieRoll;
+            int i;
+            int sum = 0;
+            for (i=0; i<2; i++)
+            {
+                if (i == 0)
+                {
+                    System.out.println("rolling dice...");
+                }
+                Thread.sleep(300);
+                dieRoll = ((int) (6.0*Math.random())) + 1;
+                int dieNumber = i +1;
+                System.out.println("Die " + dieNumber + ": " + dieRoll);
+                sum = sum + dieRoll;
+            }
+            Thread.sleep(600);
+            System.out.println("The sum is " + sum);
+            Thread.sleep(1000);
+        }
+    }
+}
+Output
+
+Roll Dice? Y/N: Y
+rolling dice...
+Die 1: 3
+Die 2: 4
+The sum is 7
+Roll Dice? Y/N: Y
+rolling dice...
+Die 1: 6
+Die 2: 4
+The sum is 10
+Roll Dice? Y/N: N
+No more dice rolls
